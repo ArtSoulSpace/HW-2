@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+}
+
+.container-for-btn {
+  margin-top: 150px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.btn {
+  border-radius: 5px;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 20px;
+  font: normal 17px arial;
+}
+
+.btn-red:not(.active) {
+  background: red;
+  text-shadow: 0 0 21px rgba(235, 150, 150, 0.5), 0 -1px 0 #471d1d;
+}
+
+.btn-red:not(.active):hover {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(228, 206, 206, 0.5),
+    0 0 10px rgba(235, 129, 129, 0.486), 0 0 2px #3c1515;
+}
+
+.btn-red:not(:hover) {
+  transition: 0.6s;
+}
+
+.btn-green:not(.active) {
+  background: rgb(24, 155, 20);
+  text-shadow: 0 0 21px rgba(184, 235, 150, 0.5), 0 -1px 0 #1d4720;
+}
+
+.btn-green:not(.active):hover {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(185, 223, 177, 0.5),
+    0 0 10px rgba(108, 228, 124, 0.486), 0 0 2px #153c1f;
+}
+
+.btn-green:not(:hover) {
+  transition: 0.6s;
+}
+
+.btn-blue:not(.active) {
+  background: rgb(20, 117, 155);
+  text-shadow: 0 0 21px rgba(150, 232, 235, 0.5), 0 -1px 0 #1d3447;
+}
+
+.btn-blue:not(.active):hover {
+  transition: color 200ms linear, text-shadow 500ms linear;
+  color: #fff;
+  text-shadow: 0 0 21px rgba(177, 210, 223, 0.5),
+    0 0 10px rgba(108, 204, 228, 0.486), 0 0 2px #152c3c;
+}
+
+.btn-blue:not(:hover) {
+  transition: 0.6s;
+}
